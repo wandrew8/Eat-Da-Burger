@@ -33,7 +33,7 @@ function printQuestionMarks(num) {
     return arr.toString();
   }
   
-  // Object for all our SQL statement functions.
+  // Displays all the burgers in the database
   var orm = {
     all: function(tableInput, cb) {
       var queryString = "SELECT * FROM " + tableInput + ";";
@@ -44,6 +44,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
+    // Adds a new burger specified by user to the database
     create: function(table, cols, vals, cb) {
       var queryString = "INSERT INTO " + table;
   
@@ -64,7 +65,7 @@ function printQuestionMarks(num) {
         cb(result);
       });
     },
-    // An example of objColVals would be {name: panther, sleepy: true}
+    // Update the devoured state to true
     update: function(table, objColVals, condition, cb) {
       var queryString = "UPDATE " + table;
   
@@ -81,7 +82,22 @@ function printQuestionMarks(num) {
   
         cb(result);
       });
-    }
+    },
+    // Delete a burger from the db.
+    delete: function(table, condition, cb) {
+      var queryString = "DELETE FROM " + table;
+      queryString += " WHERE ";
+      queryString += condition;
+
+      console.log(queryString);
+
+      connection.query(queryString, function(err, result) {
+          if (err) {
+              throw err
+          }
+          cb(result);
+      });
+  }
   };
   
   // Export the orm object for the model (burger.js).

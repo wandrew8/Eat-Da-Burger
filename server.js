@@ -17,9 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 // ==============================================================================
-// HANDLEBARS CONFIGURATION
+// SERVES STATIC CONTENT
 // ==============================================================================
 
+app.use(express.static(__dirname + '/public'));
+
+// ==============================================================================
+// HANDLEBARS CONFIGURATION
+// ==============================================================================
 
 app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");

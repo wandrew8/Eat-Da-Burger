@@ -1,0 +1,39 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+
+}
+
+h1 {
+  font-family: 'Caveat Brush', cursive;
+
+}
+
+li {
+    padding: 5px;
+    margin: 5px;
+    background: #faebd7;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .create-update-form {
+    padding: 5px;
+    margin: 5px;
+    background: aqua;
+  }
+  
+  .form-group {
+    margin-bottom: 5px;
+  }
+
+  #header {
+    background-image: url("../images/burger6.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0rem;
+
+  }
+  

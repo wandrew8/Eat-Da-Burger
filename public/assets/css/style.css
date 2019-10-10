@@ -1,39 +1,63 @@
-* {
+p, h2, h3 {
   font-family: 'Source Sans Pro', sans-serif;
-
 }
 
-h1 {
-  font-family: 'Caveat Brush', cursive;
+.headerTitle {
+  color: #333;
+  padding: 0rem;
+  margin: 0rem;
+}
 
+.h1 {
+  font-family: 'Caveat Brush', cursive;
+  font-size: 8rem;
+  padding: 0rem;
+  margin: 0rem;
+  color: #fff;
+  -webkit-text-stroke: 1px #333;
+  color: white;
+  text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}
+
+.cardHeader {
+  text-align: center;
+  font-family: 'Caveat Brush', cursive;
+  letter-spacing: 5px;
+  font-size: 3rem;
+  color: #fff;
+  -webkit-text-stroke: 1px #333;
+  color: white;
+  text-shadow: 3px 3px 0 #333, -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}
+
+.card-header {
+  background-image: linear-gradient( 90deg, #fed330, #f39c12);
 }
 
 li {
-    padding: 5px;
-    margin: 5px;
-    background: #faebd7;
-  }
-  
-  .label {
-    font-weight: bold;
-  }
-  
-  .create-update-form {
-    padding: 5px;
-    margin: 5px;
-    background: aqua;
-  }
-  
-  .form-group {
-    margin-bottom: 5px;
-  }
+  padding: 5px;
+  margin: 5px;
+  background: #faebd7;
+}
 
-  #header {
-    background-image: url("../images/burger6.gif");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 0rem;
+.label {
+  font-weight: bold;
+}
 
-  }
-  
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+#header {
+  background-image: url("../images/burger6.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0rem;
+}

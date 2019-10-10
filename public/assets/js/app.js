@@ -48,6 +48,8 @@ $(function() {
           type: "DELETE",
           url: "/api/burgers/" + id
       }).then(location.reload());
+    });
   });
 
-})
+
+
